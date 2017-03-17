@@ -11,6 +11,9 @@ aside {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+		li {
+			margin: 0.5rem 0;
+		}
 	}
 }
 
@@ -25,11 +28,20 @@ main {
 	padding-right: 1rem;
 
 	article {
-		margin-left: 2rem;
+		margin-left: 1rem;
 	}
 
 	h3 {
 		color: #2E0014;
+		&::before {
+			content: " ";
+			background: $accent-color;
+			display: inline-block;
+  		padding: 1.1rem 0.5rem 0;
+    	transform: rotate(159deg);
+    	margin-right: 0.5rem;
+    	margin-top: 0.5rem;
+		}
 	}
 
 	h4{

@@ -4,11 +4,18 @@ $secondary-color : #6D5959;
 $option-color : #EEEBD0;
 $main-color: #221E22;
 
+html {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
 body {
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
 	color: $main-color;
+	font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -30,4 +37,12 @@ h4 {
 h5 {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
+}
+
+a {
+	color: $secondary-color;
+	text-decoration: none;
+	&:hover {
+		color: $accent-color;
+	}
 }

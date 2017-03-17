@@ -1,8 +1,15 @@
 footer {
+	background: #221E22;
+	min-height: 20vh;
 	p {
 		color: white;
 		text-align: center;
-		background: #221E22;
 		line-height: 3rem;
+	}
+	a{
+		color: white;
+		&:hover {
+			color: $accent-color;
+		}
 	}
 }
